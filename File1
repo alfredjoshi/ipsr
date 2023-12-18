@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Website Example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My PHP Website!</h1>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple PHP website example to demonstrate dynamic content using PHP.</p>
+    </section>
+
+    <section>
+        <h2>Current Date and Time</h2>
+        <p><?php echo "Today is " . date("Y-m-d") . " and the time is " . date("h:i:sa"); ?></p>
+    </section>
+
+    <section>
+        <h2>Dynamic Content</h2>
+        <?php
+            // Sample array of items
+            $items = array("Apple", "Banana", "Orange", "Grapes");
+
+            // Display the items using a loop
+            echo "<ul>";
+            foreach ($items as $item) {
+                echo "<li>$item</li>";
+            }
+            echo "</ul>";
+        ?>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> PHP Website Example</p>
+    </footer>
+
+</body>
+</html>
